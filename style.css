@@ -1,0 +1,180 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+
+.main_container{
+	width:100%;
+}
+
+
+.container{
+	width:1200px;
+	margin:0 auto;
+
+}
+.card_items{
+	display:flex;
+	gap:20px;
+	margin-top:200px;
+}
+.card{
+	width:25%;
+	position:relative;
+	overflow:hidden;
+}
+.card img{
+	max-width:100%;
+	height:100%;
+	transform:scale(1);
+	transition:all 0.5s ease;
+}
+.card img:hover{
+	transform:scale(1.1);
+	/* background-color:hsl(355deg 62% 51% / 70%); */
+	
+	z-index:1; 
+	
+}
+
+.content{
+	
+	position: absolute;
+    top: 265px;
+    left: 25px;
+    color: white;
+    z-index: -1;
+}
+.content:hover{
+	position:absolute;
+	top: 450px;
+    left: 100px;
+    color:white;
+	z-index:-1;
+}
+.card:hover .content{
+	z-index:1;
+}
+
+/* .card:after{ */
+	/* position:absolute; */
+	/* top:0; */
+	/* left:0; */
+	/* height:100%; */
+	/* width:100%; */
+	/* background-color: hsl(355deg 62% 51% / 70%); */
+	/* transition:all 1s ease; */
+	/* transition:scaleX(0); */
+/* } */
+
+/* .card:hover:after{ */
+	/* transition scaleX(1); */
+/* } */
+
+.icon{
+	height:40px;
+	width:40px;
+	border:2px solid white;
+	background-color:white;
+	color:red;
+	text-align:center;
+	border-radius:50%;
+	line-height:40px;
+	position: absolute;
+	z-index:-1;
+    top: 140px;
+    left: 120px;
+	transform:rotate(0deg);
+	transition:all 0.5s ease;
+	text-decoration:none;
+	
+	
+}
+
+
+.card:hover .icon{
+	z-index:1;
+	transform:rotate(-45deg);
+}
+.icon:before{
+	content:"\f061";
+	font-family:fontawesome;
+	
+}
+.card:hover .icon{
+	z-index:1;
+}
+
+/*  transform using background color */
+
+.card1:after{
+	content:"";
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background: hsl(355deg 62% 51% / 70%);
+	transition:all 1s ease;
+	position:absolute;
+	transform:translateY(100%);
+	
+}
+.card1:hover:after{
+	transform:translateY(0);
+	overflow:hidden;
+}
+.card2:after{
+	content:"";
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background: hsl(355deg 62% 51% / 70%);
+	transition:all 1s ease;
+	position:absolute;
+	transform:translateX(100%);
+}
+.card2:hover:after{
+	transform:translateX(0);
+}
+
+.card3:after{
+	content:"";
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background: hsl(355deg 62% 51% / 70%);
+	transition:all 1s ease;
+	position:absolute;
+	transform:translateY(100%);
+}
+.card3:hover:after{
+	transform:translateY(0);
+}
+
+.card4:after{
+	content:"";
+	top:0%;
+	bottom:0;
+	width:100%;
+	height:100%;
+	background: hsl(355deg 62% 51% / 70%);
+	transition:all 1s ease;
+	position:absolute;
+	transform:scaleX(0);
+}
+.card4:hover:after{
+	transform:scaleX(1);
+}
+
+
+
+
+
+
+
+
+
+
